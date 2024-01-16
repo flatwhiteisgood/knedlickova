@@ -1,9 +1,12 @@
-from django.conf import models
+from django.db import models
 
-class datainsert(models)
-    name = models.charfield
-    cost = models.charfield
-    url = url
+class datainsert(models.Model):
+    title = models.CharField(max_length=200, default="x")
+    name = models.CharField(max_length=200, default="x")
+    play = models.CharField(max_length=200, default="x")
+    play2 = models.CharField(max_length=200, default="x")
 
-
-Python manage.py makemigrations blog
+class post(models.Model):
+    autor = models.CharField(max_length=200, default="x")
+    title = models.CharField(max_length=200, default="x")
+    mood = models.CharField(max_length=200, default="x")
